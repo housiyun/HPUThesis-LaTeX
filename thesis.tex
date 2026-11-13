@@ -1,0 +1,35 @@
+% !TeX program = xelatex
+% !BIB program = biber
+% degree=master|doctor，degreetype=academic|profession|equaleducation
+% fonts=portable|system。默认开启匿名送审，正式定稿时删除 anonymous。
+\documentclass[degree=master,degreetype=academic,fonts=portable,anonymous]{hputhesis}
+\input{chapters/info}
+\addbibresource{ref/refs.bib}
+\graphicspath{{figures/}}
+
+\begin{document}
+\makecover
+
+\hpufrontmatter
+\hpuinputfile{chapters/abstract}
+\tableofcontents
+% 理工类按校方规范保留以下三项。其他学科按需要调整。
+\listoffigures
+\listoftables
+\hpuinputfile{chapters/denotation}
+
+\hpumainmatter
+\hpuinputfile{chapters/chap01}
+\hpuinputfile{chapters/chap02}
+\hpuinputfile{chapters/chap03}
+
+\hpubackmatter
+\hpubibliography
+\hpuifnamed{\hpuinputfile{chapters/ack}}
+% 无附录时可注释下一行。
+\hpuinputfile{chapters/appendix}
+\hpuifnamed{%
+  \hpuinputfile{chapters/resume}%
+  \hpuinputfile{chapters/dataset}%
+}
+\end{document}
