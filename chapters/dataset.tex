@@ -1,0 +1,34 @@
+\hpubackheading{学位论文数据集}
+\begingroup
+\centering
+\songti\bfseries\fontsize{12bp}{15bp}\selectfont
+\renewcommand\arraystretch{1.12}
+\setlength\tabcolsep{2bp}
+% 每行共十列，采用合并单元格。星号保留自附件 1。
+\newcommand\hpuDataCell[2]{\multicolumn{#1}{>{\centering\arraybackslash}p{\dimexpr#1\textwidth/10-2\tabcolsep-.9pt\relax}|}{#2}}
+\newcommand\hpuDataFirst[2]{\multicolumn{#1}{|>{\centering\arraybackslash}p{\dimexpr#1\textwidth/10-2\tabcolsep-.9pt\relax}|}{#2}}
+\begin{tabular}{|*{10}{c|}}
+\hline
+\hpuDataFirst{2}{关键词*} & \hpuDataCell{1}{密级*} & \hpuDataCell{3}{中图分类号*} & \hpuDataCell{1}{UDC} & \hpuDataCell{3}{论文资助}\\\hline
+\hpuDataFirst{2}{\hpufield{keywords}} & \hpuDataCell{1}{\hpufield{security}} & \hpuDataCell{3}{\hpufield{clc}} & \hpuDataCell{1}{\hpufield{udc}} & \hpuDataCell{3}{\hpufield{funding}}\\\hline
+\hpuDataFirst{3}{学位授予单位名称*} & \hpuDataCell{3}{学位授予单位代码*} & \hpuDataCell{2}{学位类别*} & \hpuDataCell{2}{学位级别*}\\\hline
+\hpuDataFirst{3}{河南理工大学} & \hpuDataCell{3}{10460} & \hpuDataCell{2}{\hpufield{degree-field}} & \hpuDataCell{2}{\hpulevel}\\\hline
+\hpuDataFirst{4}{论文题名*} & \hpuDataCell{4}{并列题名*} & \hpuDataCell{2}{论文语种*}\\\hline
+\hpuDataFirst{4}{\hpufield{title}} & \hpuDataCell{4}{\hpufield{title-en}} & \hpuDataCell{2}{\hpufield{language}}\\\hline
+\hpuDataFirst{2}{作者姓名*} & \hpuDataCell{3}{\hpufield{author}} & \hpuDataCell{2}{学号*} & \hpuDataCell{3}{\hpufield{student-id}}\\\hline
+\hpuDataFirst{3}{培养单位名称*} & \hpuDataCell{3}{培养单位代码*} & \hpuDataCell{2}{培养单位地址} & \hpuDataCell{2}{邮编}\\\hline
+\hpuDataFirst{3}{河南理工大学} & \hpuDataCell{3}{10460} & \hpuDataCell{2}{河南省焦作市} & \hpuDataCell{2}{454003}\\\hline
+\hpuDataFirst{3}{学科专业*} & \hpuDataCell{3}{研究方向*} & \hpuDataCell{2}{学制*} & \hpuDataCell{2}{学位授予年*}\\\hline
+\hpuDataFirst{3}{\hpufield{major}} & \hpuDataCell{3}{\hpufield{direction}} & \hpuDataCell{2}{\hpufield{study-period}} & \hpuDataCell{2}{\hpufield{award-year}}\\\hline
+\hpuDataFirst{3}{论文提交日期*} & \hpuDataCell{7}{\hpufield{submit-date}}\\\hline
+\hpuDataFirst{2}{导师姓名*} & \hpuDataCell{3}{\hpufield{advisor}} & \hpuDataCell{2}{职称*} & \hpuDataCell{3}{\hpufield{advisor-rank}}\\\hline
+\hpuDataFirst{2}{评阅人} & \hpuDataCell{4}{答辩委员会主席*} & \hpuDataCell{4}{答辩委员会成员}\\\hline
+\hpuDataFirst{2}{\hpufield{reviewers}} & \hpuDataCell{4}{\hpufield{chair}} & \hpuDataCell{4}{\hpufield{committee}}\\\hline
+\hpuDataFirst{10}{电子版论文提交格式\quad 文本（$\checkmark$）\quad 图像（\enspace）\quad 视频（\enspace）\quad 音频（\enspace）\par
+多媒体（\enspace）\quad 其他（\enspace）\par 推荐格式：Microsoft Word（DOC）；Adobe Reader（PDF）}\\\hline
+\hpuDataFirst{4}{电子版论文出版（发布）者} & \hpuDataCell{4}{电子版论文出版（发布）地} & \hpuDataCell{2}{权限声明}\\\hline
+\hpuDataFirst{4}{\hpufield{publisher}} & \hpuDataCell{4}{\hpufield{publication-place}} & \hpuDataCell{2}{\hpufield{rights}}\\\hline
+\hpuDataFirst{3}{论文总页数*} & \hpuDataCell{7}{\ztotpages}\\\hline
+\hpuDataFirst{10}{注：共33项，其中带*为必填数据，为22项。}\\\hline
+\end{tabular}\par
+\endgroup

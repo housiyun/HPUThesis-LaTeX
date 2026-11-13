@@ -1,0 +1,28 @@
+\thispagestyle{empty}
+\begingroup
+\setlength\parindent{0pt}
+{\songti\bfseries\zihao{5}
+中图分类号：\hpufield{clc}\hfill 密\quad 级：\hpufield{security}\par
+UDC：\hpufield{udc}\hfill 单位代码：10460\par}
+\centering
+\vspace{31mm}
+{\heiti\zihao{2}\hpufield{title}\par}
+\vspace{6mm}
+{\rmfamily\zihao{2}\hpufield{title-en}\par}
+\vfill
+{\songti\bfseries\zihao{4}
+\renewcommand\arraystretch{1.65}
+\setlength\tabcolsep{3bp}
+\def\hpuadvisors{导师 & \hpureviewfield{\hpufield{advisor}} & 职称 & \hpureviewfield{\hpufield{advisor-rank}}\\}
+\hpusecondadvisor{\appto\hpuadvisors{导师 & \hpureviewfield{\hpufield{advisor-two}} & 职称 & \hpureviewfield{\hpufield{advisor-two-rank}}\\}}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+\begin{tabularx}{\textwidth}{>{\centering\arraybackslash}p{26mm}Y>{\centering\arraybackslash}p{22mm}Y}
+申请人姓名 & \hpureviewfield{\hpufield{author}} & 学位类别 & \hpufield{degree-name}\\
+专业名称 & \hpufield{major} & 研究方向 & \hpufield{direction}\\
+\hpuadvisors
+答辩日期 & \hpufield{defense-date} & 提交日期 & \hpufield{submit-date}\\
+\end{tabularx}\par}
+\vspace{26mm}
+{\heiti\zihao{4}河南理工大学\par}
+\vspace*{8mm}
+\endgroup
